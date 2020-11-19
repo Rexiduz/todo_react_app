@@ -1,0 +1,247 @@
+.app-wrapper {
+  min-height: 100vh;
+  padding-top: 56px;
+}
+
+.bg-liff {
+  background: #00b900;
+}
+
+.bg-indigo {
+  background-color: #3949ab;
+}
+
+.color-navbar-custome {
+  background-color: #3c5e73;
+}
+
+/* .btn-primary{
+  background-color: #3c5e73;
+
+} */
+
+.color-custome {
+  color: grey;
+}
+
+.color-purchase-custome {
+  background-color: #226642;
+}
+
+.custome-border {
+  border: 1px solid #cccccc;
+}
+
+.bg-indigo.light-500 {
+  background-color: #3f51b5 !important;
+}
+
+.card {
+  border-radius: 0.15rem;
+}
+
+.card-header:first-child {
+  border-radius: 0;
+}
+
+/* datepciker custome section */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker__day-name {
+  font-size: 1rem;
+}
+
+.fc-timegrid-slot.fc-timegrid-slot-lane,
+.fc-daygrid-day-events {
+  background-color: white;
+}
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: white;
+}
+
+.fullcalendar__skeleton__loading {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 90%;
+  top: 10%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  /* background-color: grey; */
+  z-index: 10;
+  opacity: 0.7;
+  background-color: #dddbdd;
+}
+
+#calendar {
+  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.15);
+}
+.fc-header-toolbar.fc-toolbar {
+  padding: 10px 10px 0 10px;
+}
+
+.modal-content,
+.list-group {
+  border-radius: 0.1px;
+}
+/* fc-toolbar-title */
+
+.product-catatalog-image {
+  width: 70px;
+  height: 80px;
+  display: flex;
+}
+.product-catalog-description {
+}
+
+.smart-q-box {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* padding: 1rem; */
+}
+
+.btn-navagation-pos {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 56px;
+  right: 10px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50% !important;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 0px 0px rgba(0, 0, 0, 0.2);
+  z-index: 400;
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.blackground-purple {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fc .fc-toolbar-title {
+    font-size: 1.2rem !important;
+  }
+}

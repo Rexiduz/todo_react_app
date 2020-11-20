@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { getTodoList } from '../feature/todo/todo-api-service'
 
 /**
@@ -12,9 +12,7 @@ import { getTodoList } from '../feature/todo/todo-api-service'
 export const TodoContext = React.createContext();
 
 export const TodoProvider = (props) => {
-    const p = useParams();
     const history = useHistory();
-    const [todo, setTodo] = React.useState({});
     const [todoList, setTodoList] = React.useState([])
     const [loading, setLoading] = React.useState(true);
 
@@ -31,10 +29,6 @@ export const TodoProvider = (props) => {
             return todoList;
         }
         history.push('/404');
-    }
-
-    const dispatch = (data) => {
-        setTodo(data);
     }
 
     return (

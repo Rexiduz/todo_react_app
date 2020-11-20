@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 import { getTodoList, createTodo, editTodo, deleteTodo } from '../todo/todo-api-service'
@@ -18,10 +18,24 @@ function TodoList() {
     }
 
     todoList()
+    getDatafilter()
     return () => {
 
     }
   }, [])
+
+
+  const getDatafilter = () => {
+
+    let data_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let data_2 = [2, 4, 6, 8, 10, 12]
+
+
+    let dataFiler = data_1.filter(x => {
+      return data_2.includes(x);
+    })
+    console.log(dataFiler)
+  }
 
   const todoList = async () => {
 

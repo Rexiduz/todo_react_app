@@ -1,16 +1,13 @@
-import React, { lazy, Suspense, useContext } from "react";
-import { Route, useParams, Switch, useRouteMatch, Redirect } from "react-router-dom";
+import React from "react";
+import { Route, Switch} from "react-router-dom";
 //feature
 import HomePage from '../feature/home/HomePage';
 import TodoList from '../feature/todo/TodoList'
 
-import { AuthContext } from "../hook/auth-context";
 
 export default function AppRoute() {
 
-  const { me, loading, isAdmin } = useContext(AuthContext);
 
-  let isAdminLogin = isAdmin();
   return (
     <Switch>
       <Route exact={true} path="/" component={HomePage} />

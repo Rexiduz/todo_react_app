@@ -196,7 +196,7 @@
 
   padding: 16px;
   border-radius: 5px;
-  width: 90%;
+  width: 50%;
 }
 
 .todo-row:nth-child(4n + 1) {

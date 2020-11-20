@@ -1,11 +1,9 @@
 
 import {
-    client,
     api,
 
 } from "../../shared/api";
 
-const SERVER_URL = 'https://candidate.neversitup.com/todo'
 
 const getTodoById = async (id) => {
     return await api.get('/todos/'`${id}`);

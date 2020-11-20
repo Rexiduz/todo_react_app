@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { AuthProvider } from "./hook/auth-context";
 import AppRoute from "./route";

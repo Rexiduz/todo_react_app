@@ -1,6 +1,6 @@
 import React from 'react'
-import { useHistory, useLocation, useParams, useRouteMatch } from 'react-router';
-import { fetchMe, loginAdmin, loginLocal } from '../feature/auth/auth-api-services';
+import { useHistory} from 'react-router';
+import { loginAdmin, loginLocal } from '../feature/auth/auth-api-services';
 import { getTodoList } from '../feature/todo/todo-api-service';
 
 /**
@@ -27,7 +27,7 @@ export const AuthProvider = (props) => {
     }, []);
 
     const isAdmin = () => {
-        if (loading == true) return false;
+        if (loading === true) return false;
         return me.userType === 'ADMIN'
     }
 

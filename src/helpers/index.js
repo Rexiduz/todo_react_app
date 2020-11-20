@@ -8,10 +8,10 @@ let EXTERNAL_HTML_TAGS = [];
 const appendElement = (parent, tag, attr, attrValue,) => {
     const htmlTag = document.createElement(tag);
     htmlTag[attr] = attrValue;
-    if (tag == "script") {
+    if (tag === "script") {
         htmlTag["type"] = "text/javascript";
     }
-    if (tag == "link") {
+    if (tag === "link") {
         htmlTag["rel"] = "stylesheet";
     }
     EXTERNAL_HTML_TAGS.push({

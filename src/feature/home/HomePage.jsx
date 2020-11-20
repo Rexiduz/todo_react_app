@@ -8,7 +8,7 @@ function HomePage() {
     const history = useHistory();
     const [loading, setLoading] = React.useState(false);
     const { handleAdminLogin } = React.useContext(AuthContext);
-    const { register, handleSubmit, reset, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
 
     React.useEffect(() => {
         main();
@@ -22,25 +22,6 @@ function HomePage() {
 
         return false
 
-    }
-
-
-
-    function progress() {
-        if (loading == false) {
-            return (
-                <>
-                    <div style={{ minHeight: "100vh" }} className=" bg-primary ">
-                        <div className="container d-flex justify-content-center align-content-center pt-5">
-                            <div style={{ fontSize: "1.5rem" }} className="spinner-border text-white">
-                            </div>   <h3 className='pl-1 text-white'>wait...</h3>
-                            {/* {renderLoginForm()} */}
-                        </div>
-                    </div>
-
-                </>
-            )
-        }
     }
 
     const onSubmit = async (data) => {
@@ -75,14 +56,14 @@ function HomePage() {
                                 <div style={{ marginBottom: 16 }} className="col-12">
                                     <div className="form-group">
                                         <input ref={register({ required: true })} type="text" name="username" className="form-control" placeholder="username" />
-                                        {errors.username && errors.username.type == "required" && <span className='text-danger'>* required</span>}
+                                        {errors.username && errors.username.type === "required" && <span className='text-danger'>* required</span>}
                                     </div>
                                 </div>
 
                                 <div style={{ marginBottom: 16 }} className="col-12">
                                     <div className="form-group">
                                         <input ref={register({ required: true })} type="password" name="password" className="form-control" placeholder="password" />
-                                        {errors.password && errors.password.type == "required" && <span className='text-danger'>* required</span>}
+                                        {errors.password && errors.password.type === "required" && <span className='text-danger'>* required</span>}
 
                                     </div>
                                 </div>
